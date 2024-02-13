@@ -1,0 +1,25 @@
+
+
+/* Background */
+$body-bg: #16161d;
+$body-color: #ffffff;
+
+/* Color */
+$dark: rgb(0, 0, 0);
+
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+/* Extra Color */
+$cus-colors: (
+   "cus-jet": #343434,
+   "cus-ebony": #282C35,
+   "cus-charcoal": #24242f,
+   
+);
+
+$theme-colors: map-merge($cus-colors, $theme-colors);
+
+/* import bootstrap to set changes */
+@import 'bootstrap/scss/bootstrap';
