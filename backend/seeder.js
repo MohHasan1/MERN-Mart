@@ -11,6 +11,7 @@ import Order from './models/orderModel.js';
 
 import connectDB from "./config/db.js";
 
+//To access the .env file
 dotenv.config();
 
 // Connect to database:

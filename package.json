@@ -9,9 +9,7 @@
     "server": "nodemon backend/index.js",
     "client": "npm run dev --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\" ",
-
     "test": "echo \"Error: no test specified\" && exit 1",
-
     "dataImport": "node backend/seeder.js",
     "dataDestroy": "node backend/seeder.js -d"
   },
@@ -20,7 +18,9 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
     "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.2.0"
   },
   "devDependencies": {
