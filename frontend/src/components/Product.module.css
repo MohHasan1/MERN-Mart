@@ -15,3 +15,14 @@
     color: rgb(177, 200, 236);
 }
 
+.card{
+    min-height: 400px;
+}
+
+.image_div{
+    min-height: 200px;
+}
+
+.image{
+    min-height: 185px;
+}

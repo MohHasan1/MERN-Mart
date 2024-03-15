@@ -23,14 +23,14 @@ import ProfileContent from './contents/ProfileContent.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
-      // Add content paths:
+
       <Route index={true} path='/' element={<HomeContent />}/>
       <Route path='/product/:id' element={<ProductContent />}/>
       <Route path='/cart' element={<CartContent />}/>
       <Route path='/login' element={<LoginContent />}/>
       <Route path='/register' element={<RegisterContent />}/>
       
-      // Private Route
+
       <Route path=''  element={<PrivateRoute></PrivateRoute>}>
         <Route path='/shipping' element={<ShippingContent />}/>
         <Route path='/payment' element={<PaymentContent />}/>

@@ -6,10 +6,10 @@ import styles from './Product.module.css';
 
 const Product = ({ product }) => {
   return (
-    <Card className="my-3 p-3 rounded" bg='cus-charcoal' >
+    <Card className={`my-3 p-3 rounded ${styles.card}`} bg='cus-charcoal' >
 
-      <Link to={`/product/${product._id}`}>
-        <Card.Img src={product.image} variant="top" alt={product.name} />
+      <Link to={`/product/${product._id}`} className={styles.image_div}> 
+        <Card.Img src={product.image} variant="top" alt={product.name} className={styles.image}/>
       </Link>
 
       <Card.Body>
