@@ -5,5 +5,8 @@ import { BASE_URL } from "../constant";
 export const apiSLice = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }),
   tagTypes: ["Product", "User", "Order"],
-  endpoints: (builder) => ({}),
+  endpoints: () => ({}), // Endpoints are injected
 });
+
+// Code Splitting
+// https://redux.js.org/toolkit/rtk-query/usage/code-splitting#injecting-endpoints

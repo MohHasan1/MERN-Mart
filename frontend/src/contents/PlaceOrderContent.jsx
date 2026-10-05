@@ -6,7 +6,7 @@ import CheckOutSteps from "../components/CheckOutSteps";
 import { toast } from "react-toastify";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
-import { useCreateOrderMutation } from "../slices/ordersSlice";
+import { useCreateOrderMutation } from "../slices/ordersApiSlice";
 import { clearCart } from "../slices/cartSlice";
 import { addDecimals } from "../utils/cartUtil";
 
